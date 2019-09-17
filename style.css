@@ -424,6 +424,9 @@ button {
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media (max-width: 360px) {
+    .slide__item {
+      margin: 16px 0; } }
   .slide__item:hover .slide__item-inner {
     cursor: pointer;
     left: 12px;
@@ -505,5 +508,15 @@ button {
       height: 10px;
       top: calc(50% - 10px / 2);
       background: #009688;
-      border-radius: 50%; }
+      border-radius: 50%;
+      margin-right: 5px; }
+
+@media (max-width: 360px) {
+  .slick-list {
+    padding-right: 20%; } }
+
+@media (max-width: 360px) {
+  .slick-prev:before,
+  .slick-next:before {
+    content: ""; } }
 
