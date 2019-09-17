@@ -445,11 +445,11 @@ button {
   .slide__item_three {
     background-image: url(images/hover_orange.b401c8d5e30ca3f447d58acc9c8149dd.png); }
   .slide__item_four {
-    background-image: url(images/hover_orange.b401c8d5e30ca3f447d58acc9c8149dd.png); }
+    background-image: url(images/normal_green_light.35755aa0344be2eefdf6c2a87139654f.png); }
   .slide__item_five {
-    background-image: url(images/hover_orange.b401c8d5e30ca3f447d58acc9c8149dd.png); }
+    background-image: url(images/normal_orange.b311684fb1af9e91891794fae0dd86bb.png); }
   .slide__item_six {
-    background-image: url(images/hover_orange.b401c8d5e30ca3f447d58acc9c8149dd.png); }
+    background-image: url(images/normal_green_dark.346e28d55e3c10af328e869cec786d94.png); }
   .slide__item-inner {
     position: absolute;
     left: 16px;
@@ -480,4 +480,30 @@ button {
   @media (max-width: 1200px) {
     .slick-slide > div {
       justify-content: center; } }
+
+.slick-dots {
+  margin: 19px auto;
+  position: static; }
+  .slick-dots li {
+    margin: 0 -1px; }
+    .slick-dots li button {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      top: calc(50% - 6px / 2);
+      background: #009688;
+      opacity: 0.25;
+      border-radius: 50%;
+      padding: 0; }
+      .slick-dots li button:hover {
+        width: 10px;
+        height: 10px;
+        top: calc(50% - 10px / 2); }
+    .slick-dots li.slick-active button {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: calc(50% - 10px / 2);
+      background: #009688;
+      border-radius: 50%; }
 
