@@ -1,0 +1,134 @@
+.slider {
+  padding-top: 74px;
+
+  &__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__headline {
+    font-family: 'PT Serif', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    color: #009688;
+    margin-bottom: 24px;
+
+    @media(max-width: 768px) {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    @media(max-width: 700px) {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+
+}
+
+.slides {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.slide {
+  
+  &__item {
+    position: relative;
+    display: inline-flex !important;
+    align-items: flex-end;
+    width: 352px!important;
+    height: 352px;
+    border-radius: 8px;
+    margin: 16px 5px 16px;
+    padding: 0 32px 31px 32px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover {
+      .slide__item-inner {
+        cursor: pointer;
+        left: 12px;
+        right: 12px;
+        top: 20px;
+        bottom: -20px;
+      }
+    }
+
+    @media(max-width: 768px) {
+      width: 328px!important;
+      height: 328px;
+    }
+
+    @media(max-width: 700px) {
+      width: 244px!important;
+      height: 244px;
+    }
+    
+    &_one {
+      background-image: url(./normal_green_light-1.png);
+    }
+    &_two {
+      background-image: url(./normal_green_dark-1.png);
+    }
+    &_three {
+      background-image: url(./hover_orange.png);
+    }
+    &_four {
+      background-image: url(./hover_orange.png);
+    }
+    &_five {
+      background-image: url(./hover_orange.png);
+    }
+    &_six {
+      background-image: url(./hover_orange.png);
+    }
+
+    &-inner {
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      top: 16px;
+      bottom: -16px;
+      opacity: 0.3;
+      filter: blur(24px);
+      border-radius: 8px;
+
+      &_green {
+        background: #00645B;
+      }
+
+      &_orange {
+        background: #642a00;
+      }
+    }
+
+    &-title {
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 32px;
+
+      @media(max-width: 700px) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+.slick-slide>div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media(max-width: 1200px) {
+    justify-content: center;
+  }
+
+}
