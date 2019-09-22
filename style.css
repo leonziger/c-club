@@ -501,6 +501,10 @@ button {
     .slick-slide > div {
       justify-content: center; } }
 
+@media (max-width: 360px) {
+  .slick-slide:after {
+    transition: opacity 0.5s; } }
+
 .slick-dots {
   margin: 19px auto;
   position: static; }
@@ -510,6 +514,9 @@ button {
   @media (max-width: 576px) {
     .slick-dots {
       margin: 8px auto; } }
+  @media (max-width: 375px) {
+    .slick-dots {
+      margin: 5px auto; } }
   .slick-dots li {
     margin: 0 -1px; }
     @media (max-width: 375px) {
@@ -540,14 +547,14 @@ button {
       margin-right: 5px; }
 
 @media (max-width: 360px) {
-  .slick-list {
+  .slick-list.draggable {
     margin-left: 25px;
     margin-right: -23px; } }
 
 @media (max-width: 360px) {
-  .slick-slide.slick-current.slick-active {
+  .slick-current {
     width: 244px !important; }
-    .slick-slide.slick-current.slick-active .slide__item {
+    .slick-current .slide__item {
       margin-right: 0; } }
 
 .slick-prev {
@@ -564,8 +571,7 @@ button {
     .slick-next {
       right: 35%; } }
 
-.slick-prev,
-.slick-next {
+.slick-prev, .slick-next {
   width: 48px;
   height: 48px;
   opacity: 0.3;
@@ -573,18 +579,13 @@ button {
   top: unset;
   bottom: -9px; }
   @media (max-width: 768px) {
-    .slick-prev,
-    .slick-next {
+    .slick-prev, .slick-next {
       bottom: 8px; } }
   @media (max-width: 720px) {
-    .slick-prev,
-    .slick-next {
+    .slick-prev, .slick-next {
       display: none !important; } }
-  .slick-prev:before,
-  .slick-next:before {
+  .slick-prev:before, .slick-next:before {
     content: ""; }
-  .slick-prev:hover, .slick-prev:focus,
-  .slick-next:hover,
-  .slick-next:focus {
+  .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
     opacity: 1; }
 
