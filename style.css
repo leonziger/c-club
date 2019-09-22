@@ -389,6 +389,9 @@ button {
   @media (max-width: 768px) {
     .slider {
       padding-top: 53px; } }
+  @media (max-width: 375px) {
+    .slider {
+      padding-top: 40px; } }
   .slider__container {
     padding-left: 15px;
     padding-right: 15px; }
@@ -414,7 +417,7 @@ button {
       .slider__headline {
         font-size: 28px;
         line-height: 40px;
-        margin-bottom: 22px; } }
+        margin-bottom: 23px; } }
 
 .slides {
   display: flex;
@@ -433,12 +436,6 @@ button {
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover; }
-  @media (max-width: 768px) {
-    .slide__item {
-      margin: 32px 16px 0px; } }
-  @media (max-width: 360px) {
-    .slide__item {
-      margin: 16px 0; } }
   .slide__item:hover .slide__item-inner {
     cursor: pointer;
     left: 12px;
@@ -448,11 +445,19 @@ button {
   @media (max-width: 768px) {
     .slide__item {
       width: 328px !important;
-      height: 328px; } }
+      height: 328px;
+      margin: 32px 16px 0px; } }
   @media (max-width: 700px) {
     .slide__item {
       width: 244px !important;
       height: 244px; } }
+  @media (max-width: 360px) {
+    .slide__item {
+      width: 244px !important;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      margin-left: 0;
+      margin-right: 16px; } }
   .slide__item_one {
     background-image: url(images/normal_green_light-1.365126d9ce173807b31a921002b85dd9.png); }
   .slide__item_two {
@@ -502,6 +507,9 @@ button {
   @media (max-width: 768px) {
     .slick-dots {
       margin: 36px auto; } }
+  @media (max-width: 576px) {
+    .slick-dots {
+      margin: 8px auto; } }
   .slick-dots li {
     margin: 0 -1px; }
     .slick-dots li button {
@@ -528,7 +536,14 @@ button {
 
 @media (max-width: 360px) {
   .slick-list {
-    padding-right: 20%; } }
+    margin-left: 25px;
+    margin-right: -23px; } }
+
+@media (max-width: 360px) {
+  .slick-slide.slick-current.slick-active {
+    width: 244px !important; }
+    .slick-slide.slick-current.slick-active .slide__item {
+      margin-right: 0; } }
 
 .slick-prev {
   background-image: url(images/left_arrow.fde223392d4ce43054fe6a71e0e79d07.png) !important;
