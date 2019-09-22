@@ -512,6 +512,11 @@ button {
       margin: 8px auto; } }
   .slick-dots li {
     margin: 0 -1px; }
+    @media (max-width: 375px) {
+      .slick-dots li {
+        margin: 0;
+        width: 15px;
+        height: 15px; } }
     .slick-dots li button {
       position: absolute;
       width: 6px;
