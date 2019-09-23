@@ -549,8 +549,7 @@ button {
 @media (max-width: 360px) {
   .slick-list.draggable {
     margin-left: 25px;
-    margin-right: -23px;
-    overflow: hidden; } }
+    margin-right: -14px; } }
 
 @media (max-width: 360px) {
   .slick-current {
