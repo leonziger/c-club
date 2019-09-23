@@ -516,7 +516,8 @@ button {
       margin: 8px auto; } }
   @media (max-width: 375px) {
     .slick-dots {
-      margin: 5px auto; } }
+      margin: 5px auto;
+      outline: 1p solid red; } }
   .slick-dots li {
     margin: 0 -1px; }
     @media (max-width: 375px) {
@@ -549,7 +550,8 @@ button {
 @media (max-width: 360px) {
   .slick-list.draggable {
     margin-left: 25px;
-    margin-right: -14px; } }
+    margin-right: -14px;
+    outline: 1p solid red; } }
 
 @media (max-width: 360px) {
   .slick-current {
