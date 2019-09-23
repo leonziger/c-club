@@ -423,6 +423,9 @@ button {
   display: flex;
   align-items: stretch;
   flex-wrap: wrap; }
+  @media (max-width: 360px) {
+    .slides {
+      outline: 1px solid blue; } }
 
 .slide__item {
   position: relative;
@@ -517,7 +520,7 @@ button {
   @media (max-width: 375px) {
     .slick-dots {
       margin: 5px auto;
-      outline: 1p solid red; } }
+      outline: 1px solid red; } }
   .slick-dots li {
     margin: 0 -1px; }
     @media (max-width: 375px) {
@@ -551,7 +554,7 @@ button {
   .slick-list.draggable {
     margin-left: 25px;
     margin-right: -14px;
-    outline: 1p solid red; } }
+    outline: 1px solid red; } }
 
 @media (max-width: 360px) {
   .slick-current {
