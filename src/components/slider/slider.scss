@@ -1,6 +1,14 @@
 .slider {
   padding-top: 74px;
 
+  @media(max-width: 768px) {
+    padding-top: 53px;
+  }
+
+  @media(max-width: 375px) {
+    padding-top: 40px;
+  }
+
   &__container {
     padding-left: 15px;
     padding-right: 15px;
@@ -19,11 +27,18 @@
     @media(max-width: 768px) {
       font-size: 32px;
       line-height: 48px;
+      margin-bottom: 9px;
     }
 
     @media(max-width: 700px) {
       font-size: 28px;
       line-height: 40px;
+    }
+
+    @media(max-width: 375px) {
+      font-size: 28px;
+      line-height: 40px;
+      margin-bottom: 23px;
     }
   }
 
@@ -63,13 +78,23 @@
     @media(max-width: 768px) {
       width: 328px!important;
       height: 328px;
+      margin: 32px 16px 0px;
     }
 
     @media(max-width: 700px) {
       width: 244px!important;
       height: 244px;
     }
-    
+
+    @media(max-width: 360px) {
+      width: 244px!important;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      margin-left: 0;
+      margin-right: 16px;
+    }
+
+
     &_one {
       background-image: url(./normal_green_light-1.png);
     }
@@ -80,13 +105,13 @@
       background-image: url(./hover_orange.png);
     }
     &_four {
-      background-image: url(./hover_orange.png);
+      background-image: url(./normal_green_light.png);
     }
     &_five {
-      background-image: url(./hover_orange.png);
+      background-image: url(./normal_orange.png);
     }
     &_six {
-      background-image: url(./hover_orange.png);
+      background-image: url(./normal_green_dark.png);
     }
 
     &-inner {
@@ -96,7 +121,7 @@
       top: 16px;
       bottom: -16px;
       opacity: 0.3;
-      filter: blur(24px);
+      filter: blur(16px);
       border-radius: 8px;
 
       &_green {
@@ -122,13 +147,154 @@
   }
 }
 
-.slick-slide>div{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.slick {
 
-  @media(max-width: 1200px) {
-    justify-content: center;
+  &-slide {
+    &>div{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media(max-width: 1200px) {
+        justify-content: center;
+      }
+    }
+
+    &:after {
+      @media(max-width: 360px) {
+        transition: opacity 0.5s;
+      }
+    }
   }
 
+  &-dots {
+    margin: 19px auto;
+    position: static;
+
+    @media(max-width: 768px) {
+      margin: 36px auto;
+    }
+
+    @media(max-width: 576px) {
+      margin: 8px auto;
+    }
+
+    @media(max-width: 375px) {
+      margin: 5px auto;
+    }
+
+    li {
+      margin: 0 -1px;
+
+      @media (max-width: 375px) {
+        margin: 0;
+        width: 15px;
+        height: 15px;
+      }
+
+      button {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        top: calc(50% - 6px / 2);
+        background: #009688;
+        opacity: 0.25;
+        border-radius: 50%;
+        padding: 0;
+
+        &:hover {
+          width: 10px;
+          height: 10px;
+          top: calc(50% - 10px / 2);
+        }
+
+      }
+
+      &.slick-active {
+        button {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          top: calc(50% - 10px / 2);
+          background: #009688;
+          border-radius: 50%;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  &-list.draggable{
+    @media(max-width: 360px) {
+      margin-left: 25px;
+      margin-right: -23px;
+    }
+  }
+
+  &-current {
+    @media(max-width: 360px) {
+      width: 244px!important;
+
+      .slide__item {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &-prev {
+    background-image: url(./left_arrow.png) !important;
+    left: 38.75%;
+
+    @media(max-width: 768px) {
+      left: 33%;
+    }
+  }
+
+  &-next {
+    background-image: url(./right_arrow.png) !important;
+    right: calc(38.75% + 48px / 2);
+
+    @media(max-width: 768px) {
+      right: 35%;
+    }
+  }
+
+  &-prev,
+  &-next {
+    width: 48px;
+    height: 48px;
+    opacity: 0.3;
+    transition: 0.3s;
+    top: unset;
+    bottom: -9px;
+
+    @media(max-width: 768px) {
+      bottom: 8px;
+    }
+
+
+    @media(max-width: 720px) {
+      display: none!important;
+    }
+
+    &:before {
+      content: "";
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+

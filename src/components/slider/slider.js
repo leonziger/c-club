@@ -9,7 +9,6 @@ $('.slides').slick(
         arrows: true,
         rows: 2,
         slidesPerRow: 3,
-
         responsive: [
             {
                 breakpoint: 1201,
@@ -29,13 +28,7 @@ $('.slides').slick(
                 breakpoint: 376,
                 settings: {
                     rows: 1,
-                    slidesPerRow: 1,
-                }
-            },
-            {
-                breakpoint: 366,
-                settings: {
-                    centerMode: false
+                    slidesPerRow: 1
                 }
             }
 
