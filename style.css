@@ -553,7 +553,7 @@ button {
 @media (max-width: 360px) {
   .slick-list.draggable {
     margin-left: 25px;
-    margin-right: -14px;
+    margin-right: -12px;
     outline: 1px solid red; } }
 
 @media (max-width: 360px) {
